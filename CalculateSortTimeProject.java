@@ -20,13 +20,9 @@ public class CalculateSortTimeProject {
 		double totalSortVector= 0;
 		
 		Random random= new Random();
-		int rand=  random.nextInt(1, Integer.MAX_VALUE); //1 inclusive, MAX_VAL exclusive
 		int[] randArray= new int[50000000];
 		for (int j=0; j<50000000; j++) {
-			randArray[j]= rand;
-			//randArray[j]=random.nextInt(1, Integer.MAX_VALUE);
-			//should have done this way, where new random generated everytime
-			//otherwise the int rand is assigned one random value only
+			randArray[j]=  random.nextInt(1, Integer.MAX_VALUE); //1 inclusive, MAX_VAL exclusive
 		}
 		
 		//Array add, sort, calculate time difference, add to total time
